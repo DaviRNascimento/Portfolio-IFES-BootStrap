@@ -1,0 +1,63 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+/* HEADER */
+h1, h5 {
+    text-align: center;
+}
+
+header {
+    background-color: rgb(45, 135, 183);
+    border-bottom: solid 3px black;
+    height: 80px;
+}
+
+main > div > img {
+    /* images will occupie all the div space */
+    width: 100%;
+    height: 100%;
+
+    /* show enough part of the image to fill the img area, keeping the original proportions */
+    object-fit: cover;
+}
+
+/* MAIN PART */
+main {
+    background-color: rgb(190, 216, 231);
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+    grid-gap: 10px;
+    grid-autorows: 100px;
+    grid-auto-flow: dense;
+
+    padding: 25px 25px;
+}
+
+.square {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.horizontally {
+    grid-column: span 2;
+}
+
+.vertically {
+    grid-row: span 2;
+}
+
+/* FOOTER */
+footer {
+    background-color: rgb(45, 135, 183);
+    text-align: center;
+    border-top: solid 3px black;
+    padding: 5px;
+}
+
+footer p, h5 {
+    margin: 0px;
+}
