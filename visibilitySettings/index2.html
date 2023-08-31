@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Visibility Settings 2</title>
+    <style>
+        div.border {
+            height: 150px;
+        }
+    </style>
+<body>
+    <!-- when one div is not displayed, another one occupies the space -->
+    <div class="p-4 col-3 m-3 bg-primary"></div>
+    <div class="p-4 col-3 m-3 bg-success d-none"></div>
+    <div class="p-4 col-3 m-3 bg-warning"></div>
+
+    <hr>
+    <!-- But when using invisible, the div stills there, even its not visible -->
+    <div class="p-4 col-3 m-3 bg-secondary"></div>
+    <div class="p-4 col-3 m-3 bg-info invisible"></div>
+    <div class="p-4 col-3 m-3 bg-danger"></div>
+
+    <hr>
+
+    <div class="container bg-info mt-3">
+        <div class="row">
+            <div class="border p-5 col-3 overflow-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, hic animi. Non obcaecati perspiciatis facilis blanditiis eum ea fuga rerum aut architecto! Provident, blanditiis enim illo repellendus fugit facere. Omnis.</div>
+            <div class="border p-5 col-3 overflow-scroll">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus accusantium repellat exercitationem adipisci fugit dicta quas ipsam quod cum id commodi autem corrupti est nostrum repellendus dolores veritatis, perspiciatis porro!</div>
+            <div class="border p-5 col-3 overflow-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dignissimos ab reiciendis consequatur suscipit nobis dolorem perspiciatis totam ipsum? Reprehenderit voluptatem voluptates facilis nam vel harum quas accusamus nulla vitae.</div>
+            <div class="border p-5 col-3 overflow-visible">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dignissimos ab reiciendis consequatur suscipit nobis dolorem perspiciatis totam ipsum? Reprehenderit voluptatem voluptates facilis nam vel harum quas accusamus nulla vitae.</div>
+        </div>
+    </div>
+</body>
+</html>

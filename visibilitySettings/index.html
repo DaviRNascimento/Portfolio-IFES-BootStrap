@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Visibility Settings</title>
+    <style>
+        div.border {
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <header class="text-bg-dark d-print-none p-3">
+        <div class="container">
+            <h1 class="display-1">Header</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- we're able, for example, to hide some itens in smaller screens and display another ones -->
+        <div class="p-5 bg-danger"></div>
+        <div class="p-4 col-3 d-none d-sm-none d-md-block m-3 bg-primary"></div>
+        <div class="p-4 col-3 d-none d-sm-none d-md-block m-3 bg-success"></div>
+        <div class="p-4 col-3 d-none d-sm-none d-md-block m-3 bg-warning"></div>
+    </div>
+
+    <article class="container my-3">
+        <h1 class="mb-4">Título do Artigo</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ex porro cumque, placeat iste labore non unde eos sapiente obcaecati itaque quod delectus debitis quos ipsam odit vero neque totam.</p>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ipsam totam, odit provident, quaerat laborum atque, incidunt suscipit iste sed voluptates modi nobis ducimus. Aliquid explicabo dolor laborum nobis officia.</p>
+        
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur facilis sapiente, dolores nobis laborum, rerum hic at porro iste iusto excepturi, deserunt tenetur voluptas dicta animi voluptates officiis. Non, ducimus.</p>
+
+        <!-- will be displayed only when printing -->
+        <p class="d-none d-print-block">Fonte: meusite.com.br</p>
+    </article>
+</body>
+</html>
