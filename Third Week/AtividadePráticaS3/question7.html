@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Question 7</title>
+</head>
+
+<body>
+    <div class="container my-3">
+        <p><a href="index.html">Voltar ao Índice</a></p>
+        <h1 class="display-2">Questão 07</h1>
+        <p class="lead">Usando somente estilos baseados em classes do Bootstrap 5, crie um formulário tradicional para cadastrar um cliente de uma loja virtual. O formulário deve ter os seguintes campos: Nome Completo, CPF, Data de Nascimento, Gênero e Endereço Completo. O formulário deve ocupar toda a largura do contêiner em resolução inferior ao breakpoint LG, 8 colunas em LG e 6 colunas em XL ou superior. Quando não ocupar toda a largura do contêiner, o formulário deve estar centralizado na página. Ainda, na resolução LG ou superior, os campos CPF, Data de Nascimento e Gênero devem estar na mesma linha, e em resoluções abaixo do breakpoint LG, cada campo deve ocupar uma linha inteira.</p>
+        <hr>
+    </div>
+
+    <!-- Valor: 1.5 pontos -->
+    <!-- FAZER AQUI -->
+
+    <div class="container col-lg-8 col-xl-6 mx-auto">
+        <form method="POST">
+            <!-- Titulo  -->
+            <p class="display-6">Cadastro de Cliente</p>
+            <hr>
+
+            <!-- Usuário -->
+            <div class="mb-3">
+                <label for="" class="form-label">Usuario/E-mail</label>
+                <input type="email" class="form-control">
+            </div>
+
+            <!-- CPF, Data de Nascimento e Gênero -->
+            <div class="row g-3">
+
+                <!-- CPF -->
+                <div class="col-12 col-lg-4">
+                    <label for="CPF" class="form-label">CPF</label>
+                    <input type="number" pattern="" id="CPF" class="form-control">
+                </div>
+
+                <!-- Data de Nascimento -->
+                <div class="col-12 col-lg-4">
+                    <label for="nascimento" class="form-label">Data de Nascimento</label>
+                    <input type="date" class="form-control" id="nascimento">
+                </div>
+
+                <!-- Gênero -->
+                <div class="col-12 col-lg-4">
+                    <label for="genero" class="form-label">Gênero</label>
+                    <select name="genero" id="genero" class="form-select">
+                        <option value="nd" selected>Selecione uma Opção</option>
+                        <option value="1">Opção 1</option>
+                        <option value="2">Opção 2</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Endereço -->
+            <label for="endereco" class="form-label my-3">Endereço Completo</label>
+            <textarea name="endr" id="endereco" cols="30" rows="10" class="form-control"></textarea>
+
+            <!-- Botão -->
+            <button class="btn btn-primary my-3">Salvar</button>
+        </form>
+    </div>
+</body>
+</html>

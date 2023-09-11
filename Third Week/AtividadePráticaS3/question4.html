@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <title>Question 4</title>
 </head>
+
 <body>
     <div class="container my-3">
         <p><a href="index.html">Voltar ao Índice</a></p>
@@ -14,12 +16,16 @@
         <p class="lead">Usando somente estilos baseados em classes do Bootstrap 5, aprimore o formulário de login da questão anterior, substituindo, onde possível, os campos tradicionais por campos com título flutuante.</p>
         <hr>
     </div>
+    
     <!-- Valor: 1.5 pontos -->
     <!-- FAZER AQUI -->
-    <div class="container">
-        <div class="col-4 mx-auto">
+    
+    <div class="container col-4 mx-auto">
+        <form method="POST">
+             <!-- Título -->
             <h1 class="display-4">Login</h1>
             <hr>
+
             <!-- Usuário /  E-mail -->
             <div class="mb-3 form-floating">
                 <input type="text" class="form-control" placeholder=" " pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
@@ -62,7 +68,7 @@
             <div class="mb-1">
                 <a href="#" class="text-decoration-none">Quero me cadastrar</a>
             </div>
-        </div>
+        </form>
     </div>
 </body>
 </html>

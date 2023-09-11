@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Question 8</title>
+</head>
+
+<body>
+    <div class="container my-3">
+        <p><a href="index.html">Voltar ao Índice</a></p>
+        <h1 class="display-2">Questão 08</h1>
+        <p class="lead">Usando somente estilos baseados em classes do Bootstrap 5, aprimore o formulário da questão 7 para que todos os seus campos fiquem com títulos flutuantes.</p>
+        <hr>
+    </div>
+    
+    <!-- Valor: 1.5 pontos -->
+    <!-- FAZER AQUI -->
+
+    <div class="container col-lg-8 col-xl-6 mx-auto">
+        <form method="POST">
+            <!-- Titulo  -->
+            <p class="display-6">Cadastro de Cliente</p>
+            <hr>
+
+            <!-- Usuário -->
+            <div class="form-floating mb-1">
+                <input type="email" id="email" class="form-control" placeholder=" " pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                <label for="email" class="form-label">Usuario/E-mail</label>
+            </div>
+
+            <!-- CPF, Data de Nascimento e Gênero -->
+            <div class="row g-1">
+
+                <!-- CPF -->
+                <div class="col-12 col-lg-4 form-floating">
+                    <input type="number" pattern="[0-9]{3}+[0-9]{3}+[0-9]{3}+[-]{1}+[0-9]{2}" id="CPF" class="form-control" placeholder="" required>
+                    <label for="CPF"    >CPF</label>
+                </div>
+
+                <!-- Data de Nascimento -->
+                <div class="form-floating col-12 col-lg-4">
+                    <input type="date" class="form-control" id="senha" placeholder=" " required>
+                    <label for="senha" class="form-label">Senha</label>
+                </div>
+
+                <!-- Gênero -->
+                <div class="col-12 col-lg-4 form-floating">
+                    <select name="genero" id="genero" class="form-select">
+                        <option value="nd" selected >Selecione uma Opção</option>
+                        <option value="1">Opção 1</option>
+                        <option value="2">Opção 2</option>
+                    </select>
+                    <label for="genero" class="form-label">Gênero</label>
+                </div>
+            </div>
+
+            <!-- Endereço -->
+            <div class="form-floating my-1">
+                <textarea name="endr" id="endereco" cols="30" rows="30" class="form-control" required></textarea>
+                <label for="endereco" class="form-label my-3">Endereço Completo</label>
+            </div>
+
+            <!-- Botão -->
+            <button class="btn btn-primary my-3">Salvar</button>
+        </form>
+    </div>
+
+</body>
+</html>
