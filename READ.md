@@ -1,2 +1,0 @@
-About
-This is a repository where I'll put my apprenticeship using HTML, CSS with the framework Bootstrap, besides of JavaScript.
