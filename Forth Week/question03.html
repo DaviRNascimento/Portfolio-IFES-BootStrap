@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Questão 03</title>
+</head>
+
+<body>
+    <div class="container my-3">
+        <p><a href="index.html">Voltar ao Índice</a></p>
+        <h1 class="display-2">Questão 03</h1>
+        <p class="lead">
+            Usando exclusivamente classes do Bootstrap 5, aprimore o resultado da questão 2 substituindo o último item de menu por um menu flutuante com o título "Logado como Fulano" e com os itens "Perfil", "Alterar Senha" e "Sair". Substitua o nome "Fulano" por seu primeiro nome e deixe-o em negrito.
+        </p>
+        <hr>
+    </div>
+    <!-- Valor: 1.5 pontos -->
+    <!-- FAZER AQUI -->
+    <navbar class="navbar bg-dark navbar-dark navbar-expand-md">
+        <div class="container d-flex">
+
+            <!-- BRAND -->
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <i class="bi-bootstrap me-3 fs-4"></i>
+                Navbar
+            </a>
+
+            <!-- BUTTON (>md) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- MENU -->
+            <div class="collapse navbar-collapse" id="navBar">
+                <div class="navbar-nav ms-md-auto">
+                    <a href="#" class="nav-link active text-end">Principal</a>
+                    <a href="#" class="nav-link text-end">Serviços</a>
+                    <a href="#" class="nav-link text-end">Contatos</a>
+
+                    <!-- LINK DROPDOWN -->
+                    <div class="dropdown">
+                        <a href="#" class="nav-link text-end dropdown-toggle" data-bs-toggle="dropdown" data-bs-          target="#navItems">Logado como <b>Davi R.</b>
+                        </a>
+                        <ul class="dropdown-menu" id="navItems">
+                            <li>
+                                <a href="" class="dropdown-item">Perfil</a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item">Alterar Senha</a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item">Sair</a>
+                            </li>
+                        </ul>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </navbar>
+</body>
+
+</html>
